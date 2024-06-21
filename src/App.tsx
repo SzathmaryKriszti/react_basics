@@ -12,11 +12,11 @@ function App() {
                     <Basics/>
                 </div>
                 <div className={"col-3"}>
-                    <FruitShop/>
-                </div>
-                <div className={"col-3"}>
                     <Card/>
                 </div>
+            </div>
+            <div className={"row"}>
+                <FruitShop/>
             </div>
         </section>
     );

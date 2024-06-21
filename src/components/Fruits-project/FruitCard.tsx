@@ -1,10 +1,20 @@
-export default function FruitCard({name, amount, image}: { name: string; amount: string; image: string }) {
+export default function FruitCard({name, amount, image}: { name: string; amount: number; image: string }) {
 
     return (
         <div>
-            <img src={image} alt={name} width={200} />
-            <h4> {name} </h4>
-            <p>Amount: {amount}</p>
+            <div className={"card text-center"} style={{width: '18rem'}}>
+                <img src={image} alt={name}/>
+                <div className={"card-body"}>
+                    <h5 className={"card-title"}> {name} </h5>
+                    <p className={"card-text"}>Amount: {amount}</p>
+                    {amount > 0 &&
+                        <>
+                            <h6 className={"card-subtitle mb-1"}> Discount!</h6>
+                            <button className={"btn btn-success"}> Shop</button>
+                        </>
+                    }
+                </div>
+            </div>
         </div>
     );
 }

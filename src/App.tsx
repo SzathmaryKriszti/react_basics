@@ -3,6 +3,8 @@ import './App.css';
 import Basics from "./components/Basics";
 import FruitShop from "./components/Fruits-project/FruitShop";
 import Card from "./components/Business-Card/Card";
+import LearningProcess from "./components/Study-Frontend/LearningProcess";
+import ProgressManager from "./components/Progress-Manager/ProgressManager";
 
 function App() {
     return (
@@ -13,6 +15,14 @@ function App() {
                 </div>
                 <div className={"col-3"}>
                     <Card/>
+                </div>
+                <div className={"col-6"}>
+                    <div className={"row"}>
+                        <LearningProcess/>
+                    </div>
+                    <div className={"row mt-3"}>
+                        <ProgressManager/>
+                    </div>
                 </div>
             </div>
             <div className={"row"}>

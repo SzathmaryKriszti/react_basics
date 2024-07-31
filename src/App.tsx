@@ -5,6 +5,7 @@ import FruitShop from "./components/Fruits-project/FruitShop";
 import Card from "./components/Business-Card/Card";
 import LearningProcess from "./components/Study-Frontend/LearningProcess";
 import ProgressManager from "./components/Progress-Manager/ProgressManager";
+import ShoppingList from "./components/Shopping-List/ShoppingList";
 
 function App() {
     return (
@@ -27,6 +28,11 @@ function App() {
             </div>
             <div className={"row"}>
                 <FruitShop/>
+            </div>
+            <div className={"row mb-3"}>
+                <div className={"col-6"}>
+                    <ShoppingList />
+                </div>
             </div>
         </section>
     );

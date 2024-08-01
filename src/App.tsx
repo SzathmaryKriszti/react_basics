@@ -6,6 +6,7 @@ import Card from "./components/Business-Card/Card";
 import LearningProcess from "./components/Study-Frontend/LearningProcess";
 import ProgressManager from "./components/Progress-Manager/ProgressManager";
 import ShoppingList from "./components/Shopping-List/ShoppingList";
+import TipCalculator from "./components/Tip-Calculator/TipCalculator";
 
 function App() {
     return (
@@ -32,6 +33,9 @@ function App() {
             <div className={"row mb-3"}>
                 <div className={"col-6"}>
                     <ShoppingList />
+                </div>
+                <div className={'col-3'}>
+                    <TipCalculator/>
                 </div>
             </div>
         </section>
